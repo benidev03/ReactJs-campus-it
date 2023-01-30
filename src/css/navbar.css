@@ -79,13 +79,13 @@
 .burgerMenu{
     display: none;
 }
-@media screen and (max-width: 769px){
+@media screen and (max-width: 768px){
     .navbar-items{ 
-        background-color: rgb(157, 225, 193);
+        background-color: rgb(59, 206, 137);
         display: flex;
         flex-direction: column;
-        justify-content: stretch;
-        align-items: center;
+        justify-content: center;
+        align-items: stretch;
         position: fixed;
         right: -100vw;
         bottom: 0;
@@ -100,18 +100,33 @@
         right: 0;
         visibility: visible;
     }
-  
+   
    .navbar-links{
         display: block;
         padding: 1rem;
         font-size: var(--font-size-small);
    }
    .navbar-links:hover{
-        
         letter-spacing:3px;
         color: #FFFF;
-        border-radius: 3px;
+        border-radius: 30px;
+        background-color: #333;
         transition: all 0.2s ease-in-out;
+        width: 30%;
+    }
+  
+    .loginBtn{
+        padding: 1rem 1rem;
+        margin-right: 200px;
+        margin-left: 200px;
+        font-size: var(--font-size-small);
+        
+    }
+    .loginBtn:hover{
+        background-color:#6a968e;
+        color: #FFFF;
+        border: #333;
+        transition: 0.2s ease-in-out;  
     }
    
    .burgerMenu{
